@@ -1,0 +1,232 @@
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@500&family=Poppins&display=swap');
+
+  *{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Body ----------------------------------------------------*/
+body{
+    background: #f9f9f9;
+    min-height: 100vh;
+    overflow-x:hidden;
+    
+}
+/* Body ----------------------------------------------------*/
+
+/* Header ---------------------------------------------------- */
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  z-index: 100;
+}
+/* Header ---------------------------------------------------- */
+
+/* Logo -------------------------------------------------------- */
+.logo{
+  font-size: 2em;
+  color: #359381;
+  pointer-events:none;
+  margin-right: 280px;
+}
+b{
+  color: #000000;
+}
+
+/* Navigation ----------------------------------------------------*/
+.navigation a{
+  text-decoration: none;
+  color: #359381;
+  padding: 6px 15px;
+  border-radius: 20px;
+  margin: 0 10px;
+  font-weight: 600;
+}
+
+.navigation a:hover,
+.navigation a.active{
+  color: #fff;
+  background-color: #359381;
+}
+/* Navigation ----------------------------------------------------*/
+
+/* Section1 Name & Images ------------------------------------------*/
+.parallax{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#text{
+    position: absolute;
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.2);
+}
+
+.parallax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+/* Section1 Name & Images ------------------------------------------*/
+
+/* About ------------------------------------------------- */
+.sec{
+    position: relative;
+    background-color: #00231c;
+    padding: 100px;
+}
+
+.sec h2{
+    font-size: 3em;
+    color:#fff;
+    margin-bottom: 10px;
+    padding-bottom: 30px;
+}
+.about-img{
+  width: 450px;
+  height: 600px;
+}
+
+#about{
+    font-size: 1em;
+    color:#fff;
+    font-weight: 300;
+    line-height: 30px;
+    width: 55%;
+    float:right;    
+}
+
+span{
+  font-size: 1.5em;
+  color:#359381;
+  text-decoration: none;
+}
+span a{
+  font-size: 1.5em;
+  color:#359381;
+  text-decoration: none;
+}
+.animate-charcter{
+   text-transform: uppercase;
+   background-image: linear-gradient(
+    -225deg,
+    #359381 0%,
+    #00231c 29%,
+    #fff 67%,
+    #359381 100%
+  );
+   background-size: auto auto;
+   background-clip: border-box;
+   background-size: 200% auto;
+   color: #fff;
+   background-clip: text;
+   text-fill-color: transparent;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   animation: textclip 2s linear infinite;
+   display: inline-block;
+      font-size:1.5em;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+/* About ------------------------------------------------- */
+
+/* service------------------------------------------------  */
+.service{
+  background-color: #00231c;
+    color:#fff;
+    padding: 100px;
+}
+.service h2{
+  font-size: 3em;
+  color:#fff;
+  margin-bottom: 10px;
+  padding:0 30px 0px 0;
+
+}
+.service ol{
+  font-size: 1.5em;
+  float:left;
+  line-height: 80px;
+  margin-left: 100px;
+
+}
+.service ol li:hover{
+  text-shadow: 2px 6px 8px #359381;
+  cursor: pointer;
+}
+.service img{
+  width: 450px;
+  height: 600px;
+  margin-left: 500px;
+}
+/* service------------------------------------------------  */
+
+/* footer------------------------------------------------- */
+footer{
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-color: #10ba9b;
+}
+footer h2{
+  font-size: 2em;
+  color:#fff;
+  text-align: center;
+}
+footer img{
+  height: 300px;
+  width: auto;
+  position: absolute;
+  bottom: 0;
+}
+.img2{
+position: absolute;
+right: 0;
+top:  0px
+}
+.icons{
+font-size: 40px;
+border: 5px solid #359381;
+padding: 20px;
+border-radius: 50%;
+color:#00231c ;
+margin-left: 30px;
+}
+.icons:hover{
+  background-color: #00231c;
+  color: #359381;
+border: 5px solid #00231c;
+  
+}
+.icon-footer{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+footer p{
+  text-align: center;
+  margin-top: 20px;
+}
